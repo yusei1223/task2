@@ -7,7 +7,6 @@ before_action :authenticate_user!
     @bookn = Book.new
     @book_comments = @book.book_comments
     @book_comment = BookComment.new
-    @favorite = favorite.new
   end
 
   def index

@@ -7,7 +7,7 @@ class Book < ApplicationRecord
 	has_many :favorites, dependent: :destroy
 	has_many :book_comments, dependent: :destroy
 
-def favorite_by?(book)
+def favorited_by?(book)
     favorites.exists?(book_id: book.id)
 end
 
